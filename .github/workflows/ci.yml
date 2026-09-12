@@ -1,0 +1,15 @@
+name: Simple CI
+
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Success message
+        run: echo "GitHub Actions workflow completed successfully!"
